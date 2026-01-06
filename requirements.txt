@@ -1,4 +1,4 @@
-python 3.10.0
+python==3.10.0
 agno==2.3.21
 annotated-doc==0.0.4
 annotated-types==0.7.0
