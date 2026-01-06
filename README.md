@@ -25,7 +25,7 @@ FiscalIA Pro é uma ferramenta para processar lotes de arquivos XML de Notas Fis
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <url-do-seu-repositorio>
+    git clone https://github.com/augdev1/fiscal_nf_ai.git
     cd fiscal_ai_pro
     ```
 
