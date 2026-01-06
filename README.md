@@ -17,6 +17,10 @@ FiscalIA Pro é uma ferramenta para processar lotes de arquivos XML de Notas Fis
 - **Inteligência Artificial**: Groq SDK
 - **Servidor**: Uvicorn
 
+## Pré-requisitos
+
+- Python 3.10.0
+
 ## Instalação
 
 1.  **Clone o repositório:**
