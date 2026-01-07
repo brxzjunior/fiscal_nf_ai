@@ -16,14 +16,14 @@ FiscalIA Pro é uma aplicação web para análise inteligente de Notas Fiscais E
 
 ### 1. Pré-requisitos
 
-- Python 3.8+
+- Python 3.10.0
 - [Git](https://git-scm.com/)
 
 ### 2. Instalação
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/augdev1/fiscal_nf_ai.git
     cd fiscal_ai_pro
     ```
 
