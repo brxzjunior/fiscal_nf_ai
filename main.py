@@ -8,6 +8,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from typing import List
 from ia_agente import gerar_resumo_nf
+from gerar_relatorio_pdf import gerar_relatorio_pdf
 
 
 def extrair_inf_nfe(data: dict) -> dict:
@@ -830,6 +831,25 @@ async def home():
       </body>
     </html>
     """
+
+@app.get("/gerar-relatorio-pdf")
+async def relatorio_pdf(nome_arquivo: str):
+    caminho_pdf = gerar_relatorio_pdf(nome_arquivo)
+    return FileResponse(
+        caminho_pdf,
+        media_type="application/pdf",
+        filename="relatorio_nfes.pdf",
+    )
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
