@@ -834,21 +834,13 @@ async def home():
 
 @app.get("/gerar-relatorio-pdf")
 async def relatorio_pdf(nome_arquivo: str):
+    nome_arquivo = nome_arquivo.strip()
     caminho_pdf = gerar_relatorio_pdf(nome_arquivo)
     return FileResponse(
         caminho_pdf,
         media_type="application/pdf",
         filename="relatorio_nfes.pdf",
     )
-
-
-
-
-
-
-
-
-
 
 
 
